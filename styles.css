@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    width: 1440px;
+    height: 800px;
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+    font-family: Raleway;
+    color: hsl(243, 100%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-img{
+    position: absolute;
+    bottom: 0;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    column-gap: 30px;
+    margin-bottom: 22px;
+    margin-left: 0px;
+}
+.fylo-container, .range-container{
+    box-shadow: -10px 10px 40px hsla(229, 57%, 11%, 0.8);
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+}
+.fylo-container{
+    width: 270px;
+    height: 121px;
+    padding: 40px;
+    border-top-right-radius: 100px;
+}
+.range-container{
+    width: 460px;
+    height: 74px;
+    padding: 40px;
+    /* position: relative; */
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+.all-logos{
+    display: flex;
+    justify-content: space-between;
+    width: 176px;
+    margin-top: 29px;
+}
+.fylo, .all-logos{
+    margin-left: 1px;
+}
+.range{
+    width: 453px;
+    height: 14px;
+    margin: 0 0 0 0;
+    border-radius: 9px;
+    border-width: 3px;
+    background-color: hsl(229, 57%, 11%, 0.5);
+    border-color: transparent;
+    border-style: solid;
+}
+.range-color{
+    height: 14px;
+    width: 339px;
+    border-radius: 9px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.range-circle{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+.range-circle:hover{
+    cursor: pointer;
+}
+.storage-used{
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+.storage-amount{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.storage-amount p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.storage-remain-bubble{
+    background-color: white;
+    width: 179px;
+    height: 72px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    top: 0;
+    right: 40px;
+}
+.storage-remain-bubble b{
+    color: hsl(229, 57%, 11%);
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 9px;
+}
+.storage-remain-bubble p{
+    color: hsl(229, 7%, 55%);
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+}
+.storage-remain-bubble::after{
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 22px solid transparent;
+    border-right-color: white;
+}
